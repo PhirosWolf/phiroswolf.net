@@ -1,0 +1,17 @@
+About me
+I'm Swiss wolf named PhirosWolf, I really like programming, maths, everything that touches to logic, art and music. I'm also a Rust enthusiast. Data privacy and the principles stated in the Mozilla Manifesto matters to me. I speak French, English and I'm currently learning Russian.
+
+I worked with many programming languages over the years. Here's a list of the languages I learned sorted by order of mastery.
+<Sorted cards of programming languages with personnal annotations>
+
+My projects
+In this section, you can find all of my projects as well as projects ideas.
+<Cards of my projects>
+
+Contact me
+If you have any question or you just simply want to contact me, you can find me there:
+<links of multiple social networks>
+
+LINKS:
+Rust -> https://www.rust-lang.org/
+Mozilla Manifesto -> https://www.mozilla.org/en-US/about/manifesto/

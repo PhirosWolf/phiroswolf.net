@@ -1,0 +1,188 @@
+/*
+Palette URL: http://paletton.com/#uid=5430u0kpjIDeJS4krN3uVEvBesI
+
+.rgba-primary-0 { color: rgba( 78, 67,211,1) } Main Primary color (blue-ish)
+.rgba-primary-1 { color: rgba(148,141,233,1) } (light)
+.rgba-primary-2 { color: rgba(109,100,221,1) }
+.rgba-primary-3 { color: rgba( 46, 34,201,1) }
+.rgba-primary-4 { color: rgba( 28, 18,159,1) } (dark)
+.rgba-secondary-1-0 { color: rgba(129, 56,208,1) } Main Secondary color (purple-ish)
+.rgba-secondary-1-1 { color: rgba(181,134,232,1) } (light)
+.rgba-secondary-1-2 { color: rgba(152, 90,219,1) }
+.rgba-secondary-1-3 { color: rgba(106, 22,197,1) }
+.rgba-secondary-1-4 { color: rgba( 79, 10,155,1) } (dark)
+.rgba-secondary-2-0 { color: rgba( 55,128,204,1) } Main Secondary color (light-blue-ish)
+.rgba-secondary-2-1 { color: rgba(132,180,230,1) } (light)
+.rgba-secondary-2-2 { color: rgba( 89,151,216,1) }
+.rgba-secondary-2-3 { color: rgba( 21,105,192,1) }
+.rgba-secondary-2-4 { color: rgba(  9, 78,149,1) } (dark)
+*/
+
+:root {
+  --main-color: rgb(78, 67, 211);
+  --lighter-main-color: rgb(148, 141, 233);
+  --light-main-color: rgb(109, 100, 221);
+  --dark-main-color: rgb(46, 34, 201);
+  --darker-main-color: rgb(28, 18, 159);
+  --fst-sec-color: rgb(129, 56, 208);
+  --lighter-fst-sec-color: rgb(181, 134, 232);
+  --light-fst-sec-color: rgb(152, 90, 219);
+  --dark-fst-sec-color: rgb(106, 22, 197);
+  --darker-fst-sec-color: rgb(79, 10, 155);
+  --scnd-sec-color: rgb(55, 128, 204);
+  --lighter-scnd-sec-color: rgb(132, 180, 230);
+  --light-scnd-sec-color: rgb(89, 151, 216);
+  --dark-scnd-sec-color: rgb(21, 105, 192);
+  --darker-scnd-sec-color: rgb(9, 78, 149);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 300vh;
+  overflow-x: hidden; /* Remove horizontal scroll bar */
+}
+
+header {
+  height: calc(100vh + 450px);
+  background-image: url('./../images/universe.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 150;
+}
+
+header .icon {
+  border-radius: 100%;
+  width: 7vw;
+  min-width: 100px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  user-select: none;
+  margin-top: 10px;
+  z-index: inherit;
+}
+
+header .hello {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: inherit;
+}
+
+header .hello h1 {
+  color: lightgray;
+  font-family: gravity;
+  font-size: 7em;
+}
+
+header video {
+  height: calc(100% + 450px);
+  position: absolute;
+  left: -50%;
+  z-index: 50;
+}
+
+section {
+  position: relative;
+  background-color: var(--section-color);
+  height: var(--section-height);
+  z-index: 100;
+}
+
+section h2 {
+  position: relative;
+  top: calc(-225px + 1em);
+  left: 0;
+  right: 0;
+  font-family: gravity;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  z-index: 200;
+}
+
+section .content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: -162px;
+  z-index: 200;
+}
+
+section .content p {
+  padding: 0 5%;
+  font-family: gravity;
+  font-size: 1.5em;
+}
+
+section::before {
+  z-index: 100;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 225px;
+  width: 120%;
+  top: 0;
+  right: 0;
+  transform: rotate(5deg);
+  transform-origin: right top;
+  background-color: var(--section-color);
+}
+
+section::after {
+  z-index: 100;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 225px;
+  width: 120%;
+  bottom: 0;
+  left: 0;
+  transform: rotate(5deg);
+  transform-origin: left top;
+  background-color: var(--section-color);
+}
+
+.background {
+  position: relative;
+  float: left;
+  height: 50vh;
+  width: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+section.about-me {
+  --section-color: var(--light-scnd-sec-color);
+  --section-height: 50vw;
+  margin-top: -225px;
+}
+
+section.about-me h2 {
+  color: white;
+}
+
+section.about-me .content {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bg1 {
+  background-image: url('./../images/city.png');
+}
+
+section.my-projects {
+  --section-color: var(--light-main-color);
+  --section-height: 30vh;
+  margin-top: 50vh;
+}
+
+section.my-projects h2 {
+  color: rgb(230, 230, 230);
+}
