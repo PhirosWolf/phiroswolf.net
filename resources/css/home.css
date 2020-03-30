@@ -34,13 +34,14 @@ Palette URL: http://paletton.com/#uid=5430u0kpjIDeJS4krN3uVEvBesI
   --light-scnd-sec-color: rgb(89, 151, 216);
   --dark-scnd-sec-color: rgb(21, 105, 192);
   --darker-scnd-sec-color: rgb(9, 78, 149);
+  --backgrounds-height: 30vw;
 }
 
 body {
   margin: 0;
   padding: 0;
 
-  height: 300vh;
+  /* height: 300vh; */
   overflow-x: hidden; /* Remove horizontal scroll bar */
 }
 
@@ -115,10 +116,17 @@ section .content {
   z-index: 200;
 }
 
-section .content p {
+section .content {
   padding: 0 5%;
-  font-family: gravity;
+}
+
+section .content > p {
   font-size: 1.5em;
+  text-align: justify;
+}
+
+section .content p {
+  font-family: gravity;
 }
 
 section::before {
@@ -152,15 +160,78 @@ section::after {
 .background {
   position: relative;
   float: left;
-  height: 50vh;
+  height: var(--backgrounds-height);
   width: 100%;
   background-size: contain;
   background-attachment: fixed;
 }
 
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0 0 1px black;
+  width: 400px;
+  overflow: hidden;
+  justify-self: center;
+  background-color: var(--card-color);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.card:hover {
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 5px black;
+}
+
+.card .image-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+}
+
+.card .image-container img {
+  height: 300px;
+  max-width: 70%;
+  transform: scale(0.9);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .image-container img {
+  transform: scale(1.0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card h3, .card p {
+  padding: 0 5%;
+}
+
+.card h3 {
+  font-family: gravity;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.card:hover h3 {
+  text-decoration: underline;
+}
+
+.card p {
+  font-size: 1.3em;
+  text-align: justify;
+}
+
 section.about-me {
   --section-color: var(--light-scnd-sec-color);
-  --section-height: 50vw;
+  --card-color: var(--scnd-sec-color);
   margin-top: -225px;
 }
 
@@ -173,16 +244,32 @@ section.about-me .content {
   align-items: flex-start;
 }
 
+section.about-me .card-list {
+
+}
+
 .bg1 {
   background-image: url('./../images/city.png');
 }
 
 section.my-projects {
   --section-color: var(--light-main-color);
-  --section-height: 30vh;
-  margin-top: 50vh;
+  margin-top: var(--backgrounds-height);
 }
 
 section.my-projects h2 {
+  color: rgb(230, 230, 230);
+}
+
+.bg2 {
+  background-image: url('./../images/city.png');
+}
+
+section.contact-me {
+  --section-color: var(--lighter-main-color);
+  margin-top: var(--backgrounds-height);
+}
+
+section.contact-me h2 {
   color: rgb(230, 230, 230);
 }
