@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./../resources/css/home.css" />
     <link rel="stylesheet" href="./../resources/css/fonts.css" />
+    <script src="./../src/js/home.js" defer></script>
     <title>Home - PhirosWolf.net</title>
   </head>
   <body>
@@ -14,7 +15,8 @@
         <h1>Hello!</h1>
       </div>
       <video autoplay muted loop id="galaxy">
-        <source src="./../resources/videos/galaxy.mp4" type="video/mp4" />
+        <!-- <source src="./../resources/videos/galaxy.mp4" type="video/mp4" /> -->
+        <source src="https://www.shadamethyst.xyz/static/video-phiroswolf.mp4" type="video/mp4" />
       </video>
     </header>
     <nav>
@@ -25,111 +27,128 @@
         <p>I am a Swiss wolf named PhirosWolf, I am self-taught and I am a CS student at ETML. I really like programming, maths, everything that touches to logic, art and music. I am also a <a href="https://rust-lang.org/">Rust</a> enthusiast. Data privacy and the principles stated in the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> matter to me. I speak French, English and I am currently learning Russian.</p>
         <p>I worked with many programming languages over the years and learning new ones is not a problem to me. Anyway, here is a list of the languages I learned.</p>
         <div class="card-list">
-          <div class="card">
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/rust-logo.svg" />
             </div>
             <h3>Rust</h3>
             <p>Rust is one of my favorite languages. It is low-level and the syntax is more understandable than the C syntax. It is also fast, memory-safe and thread-safe. You can do whatever you want from Web applications via WebAssembly to Embedded programs and networking services.</p>
             <p>Mastery: I know how to use advanced Rust, but I do not know all about Rust (such as how to do embedded programs).</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/javascript-logo.svg" />
             </div>
             <h3>JavaScript</h3>
             <p>JavaScript is also one of my favorite languages. It is one of my first programming language! I did a lot of things with it: Games, animations, tools for HTML Canvas and multiple other things.</p>
             <p>Mastery: I know a lot about JavaScript. Classes, prototypes, arrow function expressions, generator functions, promise objects, async/await keywords and some JavaScript APIs.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/html-logo.svg" />
             </div>
             <h3>HTML5</h3>
             <p>Even though HTML5 is not a programming language, it still fits into this list. HTML5 is a markup language. The "5" in HTML5 refers to the last version of HTML, which is a living standard.</p>
             <p>Mastery: I know almost all HTML5 tags and how to use them.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/css-logo.svg" />
             </div>
             <h3>CSS3</h3>
             <p>CSS3 is not a programming language either but still belongs to this list. CSS3 is a style sheet language. CSS3 is the most recent version of CSS.</p>
             <p>Mastery: I know how to use CSS animations, 3D animations, CSS grids, flexboxes, pseudo-classes, media queries, etc.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/php-logo.svg" />
             </div>
             <h3>PHP</h3>
             <p>PHP is a server-side language. I do not really like the style of PHP, but it works fine for creating web applications.</p>
             <p>Mastery: I learned how to do OOP with PHP as well as how to manipulate databases with it. But I can learn more if needed.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/csharp-logo.svg" />
             </div>
             <h3>C#</h3>
-            <p>C# is a language created my Microsoft. It is pretty useful when developping applications for Windows. You can create applications for Linux, game consoles, etc. with C# but compiling C# on Linux can be really tough depending on the distribution you use.</p>
+            <p>C# is a language created by Microsoft. It is pretty useful when developping applications for Windows. You can create applications for Linux, game consoles, etc. with C# but compiling C# on Linux can be really tough depending on the distribution you use.</p>
             <p>Mastery: I know how to doo OOP with it and how to do basic networking (UDP).</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/nodejs-logo.svg" />
             </div>
             <h3>Node.js</h3>
-            <p>Node.js is a server-side language, like PHP, but Node.js is based on the V8 JavaScript engine. It is not used as much as PHP though. But Node.js allows you to modify the behaviour of the server itself. That is why Node.js is used by many softwares to create local servers.</p>
-            <p>Mastery: I forgot pretty much about it. But seing a bit of the documentation could remind me some basic Node.js.</p>
-          </div>
-          <div class="card">
+            <p>Node.js is a server-side language, like PHP, but Node.js is based on the V8 JavaScript engine. It is however not used as much as PHP, but Node.js allows you to modify the behaviour of the server itself. That is why Node.js is used by many softwares to create local servers.</p>
+            <p>Mastery: I forgot pretty much everything about it. But seing a bit of the documentation could remind me some basic Node.js.</p>
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/java-logo.svg" />
             </div>
             <h3>Java</h3>
             <p>Java is one of my first programming languages. I used to use it for Minecraft plugins, but then, I started learning the real basics of Java.</p>
             <p>Mastery: It is been a while since I stopped learning Java. But if I could take a look at the documentation, I could resume my learning of Java.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/swift-logo.svg" />
             </div>
             <h3>Swift</h3>
             <p>Swift is a programming language developed by Apple. At first glance, it may look pretty strange, but I think its syntax is better than other languages.</p>
             <p>Mastery: I started to learn it a few months ago. I know how to do basic OOP with Swift but I still have to learn a lot about Swift.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/cpp-logo.svg" />
             </div>
             <h3>C++</h3>
             <p>C++ is an old but reliable language. Nevertheless, the syntax is pretty hard to understand and memorise. But C++ is still used in low-level infrastructures.</p>
             <p>Mastery: I used to do basic command-line applications with it. I even tried to use SFML. But now, I forgot almost all about it since C++ was my very first programming language. Still, C++ made me understand how pointers work as well as the basics of OOP.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/sql-logo.svg" />
             </div>
             <h3>SQL</h3>
             <p>SQL is not a programming language. But it is very useful when using databases. SQL can be splitted into several parts. DQL (Data Query Language), DDL (Data Definition Language), DCL (Data Control Language), DML (Data Manipulation Language) and TCL (Transaction Control Language).</p>
             <p>Mastery: I know MySQL, but learning other "versions" of SQL should not be a problem. I know how to use DQL, DDL, DCL and DML parts of SQL.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="image-container">
               <img src="./../resources/images/powershell-logo.png" />
             </div>
             <h3>PowerShell</h3>
             <p>PowerShell is a scripting language for Windows built on the .NET framework.</p>
             <p>Mastery: I know the basics of PowerShell and how to manipulate databases with it.</p>
-          </div>
+          </article>
         </div>
+        <!-- TODO: Fix the "only first cards" display and this button -->
+        <button class="show-more">Show More</button>
       </div>
     </section>
     <div class="background bg1"></div>
     <section class="my-projects">
       <h2>My projects</h2>
       <div class="content">
-        <p>In this section, you can find all of my projects as well as projects ideas.</p>
-        <div class="card-list"></div>
+        <p>These are some of my biggest projects. If you want to see the full project list, you can go check this trello board: <a href="https://trello.com/b/pxHXrkL0" target="_blank" rel="noopener noreferrer">PhirosWolf TODO</a>.</p>
+        <div class="card-list">
+          <article class="card">
+            <h3>(Unnamed) Game Project</h3>
+            <p>An open-world 2D RPG game with a high level of customisation.</p>
+            <p>I'm using Rust with <a href="https://amethyst.rs/" target="_blank" rel="noopener noreferrer">Amethyst Engine</a> to make this game.</p>
+          </article>
+          <article class="card">
+            <h3>Share & Find</h3>
+            <p>A web app allowing members to share free services with other members also sharing their services.</p>
+          </article>
+          <article class="card">
+            <h3>IdeaBucket</h3>
+            <p>A web app where everyone could share their ideas so that other members could improve it.</p>
+            <p>This web app could be enhanced by adding a project extension (IdeaBucket Connect), which will link ideas between them.</p>
+          </article>
+        </div>
       </div>
     </section>
     <div class="background bg2"></div>
@@ -137,7 +156,12 @@
       <h2>Contact</h2>
       <div class="content">
         <p>If you have any question or you just simply want to contact me, you can find me there:</p>
-        <div class="list"></div>
+        <div class="list">
+          <ul>
+            <li>Twitter: <a href="https://twitter.com/PhirosWolf">@PhirosWolf</a></li>
+            <li>Discord: PhirosWolf#9575</li>
+          </ul>
+        </div>
       </div>
     </section>
     <div class="background bg3"></div>

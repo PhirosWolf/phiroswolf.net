@@ -62,7 +62,8 @@ header .icon {
   left: 50%;
   user-select: none;
   margin-top: 10px;
-  z-index: inherit;
+  /* z-index: inherit; */
+  z-index: 150;
 }
 
 header .hello {
@@ -70,7 +71,8 @@ header .hello {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: inherit;
+  /* z-index: inherit; */
+  z-index: 150;
 }
 
 header .hello h1 {
@@ -111,6 +113,7 @@ section .content {
   position: relative;
   justify-content: center;
   align-items: center;
+  font-family: gravity;
   height: 100%;
   top: -162px;
   z-index: 200;
@@ -229,6 +232,30 @@ section::after {
   text-align: justify;
 }
 
+.show-more {
+  all: unset;
+  border: none;
+  background-color: #0060df;
+  color: white;
+  border-radius: 2px;
+  height: 32px;
+  padding: 10px 32px;
+  margin-top: 50px;
+  font-family: gravity;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.list {
+  width: 100%;
+}
+
+.list ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
 section.about-me {
   --section-color: var(--light-scnd-sec-color);
   --card-color: var(--scnd-sec-color);
@@ -241,7 +268,6 @@ section.about-me h2 {
 
 section.about-me .content {
   justify-content: flex-start;
-  align-items: flex-start;
 }
 
 section.about-me .card-list {
@@ -268,8 +294,13 @@ section.my-projects h2 {
 section.contact-me {
   --section-color: var(--lighter-main-color);
   margin-top: var(--backgrounds-height);
+  font-
 }
 
 section.contact-me h2 {
   color: rgb(230, 230, 230);
+}
+
+.bg3 {
+  background-image: url('./../images/city.png');
 }
