@@ -81,7 +81,7 @@ header .hello h1 {
   font-size: 7em;
 }
 
-header video {
+header video {rojects
   height: calc(100% + 450px);
   position: absolute;
   left: -50%;
@@ -165,7 +165,7 @@ section::after {
   float: left;
   height: var(--backgrounds-height);
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -248,6 +248,7 @@ section::after {
 
 .list {
   width: 100%;
+  font-size: 1.5em;
 }
 
 .list ul {
@@ -275,7 +276,7 @@ section.about-me .card-list {
 }
 
 .bg1 {
-  background-image: url('./../images/city.png');
+  background-image: url('./../images/cosmos.jpg');
 }
 
 section.my-projects {
@@ -288,7 +289,7 @@ section.my-projects h2 {
 }
 
 .bg2 {
-  background-image: url('./../images/city.png');
+  background-image: url('./../images/star-sky.jpg');
 }
 
 section.contact-me {
